@@ -8,9 +8,6 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add EF Core DbContext (use SQLite for simplicity)
-//builder.Services.AddDbContext<AppDbContext>(options =>
-//    options.UseSqlite("Data Source=hotelbooking.db"));
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 // Add repositories and unit of work
 builder.Services.AddScoped<IHotelRepository, HotelRepository>();
@@ -49,3 +46,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+// Make the implicit Program class public so test projects can access it
+public partial class Program { }

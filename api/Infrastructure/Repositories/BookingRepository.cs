@@ -15,11 +15,15 @@ public class BookingRepository : IBookingRepository
 
     public async Task<IEnumerable<Room>> GetAvailableRoomsAsync(int hotelId, DateTime start, DateTime end, int guests)
     {
-        return await _db.Rooms
-            .Include(r => r.Bookings)
-            .Where(r => r.HotelId == hotelId && r.Capacity >= guests &&
-                r.Bookings.All(b => end <= b.StartDate || start >= b.EndDate))
-            .ToListAsync();
+   
+        var rooms = await _db.Rooms
+            .Where(r => r.HotelId == hotelId)
+            .ToListAsync(); // Materialize the query, so the rest runs in memory  
+ 
+        var availableRooms = rooms.Where(r => r.Capacity >= guests &&
+            r.Bookings.All(b => end <= b.StartDate || start >= b.EndDate));
+
+        return availableRooms;
     }
 
     public async Task AddAsync(Booking booking)

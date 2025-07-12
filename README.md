@@ -25,3 +25,6 @@ This is a RESTful API built with ASP.NET Core 8 and EF Core, implementing a hote
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - Optional: [Visual Studio 2022+](https://visualstudio.microsoft.com/) or VS Code with C# extension.
 
+### Run the following to scaffold and apply migration:
+- dotnet ef migrations add Init
+- dotnet ef database update
