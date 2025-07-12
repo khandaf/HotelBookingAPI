@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelBookingAPI.Tests", "test\HotelBookingAPI.Tests.csproj\HotelBookingAPI.Tests.csproj", "{D2FF316F-3F3A-473C-9EBA-9774F7F2B9C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelBookingAPI.Tests", "test\HotelBookingAPI.Tests.csproj", "{4B4D5897-C4CE-F9A9-180B-224160038CAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{476523D2-B3E0-EBE7-ECCC-4CE8C81F1368}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{476523D2-B3E0-EBE7-ECCC-4CE8C81F1368}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{476523D2-B3E0-EBE7-ECCC-4CE8C81F1368}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2FF316F-3F3A-473C-9EBA-9774F7F2B9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2FF316F-3F3A-473C-9EBA-9774F7F2B9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2FF316F-3F3A-473C-9EBA-9774F7F2B9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2FF316F-3F3A-473C-9EBA-9774F7F2B9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B4D5897-C4CE-F9A9-180B-224160038CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B4D5897-C4CE-F9A9-180B-224160038CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B4D5897-C4CE-F9A9-180B-224160038CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B4D5897-C4CE-F9A9-180B-224160038CAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -25,9 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\api\HotelBookingAPI.csproj" />
+    <ProjectReference Include="..\api\HotelBookingAPI.csproj" />
   </ItemGroup>
 
+  
   <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
